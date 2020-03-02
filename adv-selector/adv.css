@@ -1,0 +1,83 @@
+/* ################## */
+/* GROUPING SELECTOR */
+/* ################## */
+
+/* Semua tag p , h1, dan h2 */
+p, h1, h2{
+
+}
+
+/* Semua tag p yang memiliki id main */
+p#main {
+
+}
+
+/* Semua tag 'p' yang memiliki class secondary */
+p.secondary {
+
+}
+
+/* Semua tag 'p' yang memiliki id main atau class secondary */
+p#main, p.secondary{
+
+}
+
+/* Semua tag 'p' yang ada di dalam tag 'div' */
+div p {
+
+}
+
+/* Semua tag 'i yg ada di dalam tag 'p', dimana 'p' ada didalam 'div' */
+div p i {
+
+}
+
+/* Plus 5 */
+
+p .hello{
+    /* Ghalib */
+}
+
+div p#something{
+    /* Dimas Triv*/
+}
+
+div p #something{
+    /* Firza */
+    border : solid black 1px
+}
+
+div#container p.nice{
+    /* Radit */
+}
+
+div#container p.nice, ul{
+    /* Kunto */
+}
+
+main h1, footer h1, h1#footerFamily{
+    /* Kharis */
+}
+
+input#hello {
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color:rgb(14, 100, 74);
+    font-size: 4px;
+    font-weight: bold;
+}
+
+input#hello:hover {
+    color: rgb(14, 100, 74);
+    background-color:white;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+input#hello:active {
+    color: rgb(219, 206, 206);
+    background-color:rgb(64, 9, 71);
+    font-size: 30px;
+    font-weight: bold;
+}

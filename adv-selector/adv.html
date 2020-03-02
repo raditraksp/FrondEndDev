@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="adv.css">
+
+</head>
+<body>
+    <h1>ADV SELECTOR</h1>
+
+    <!-- Semua tag p , h1, dan h2 -->
+    <h1>Header One</h1>
+    <h2>Header Two</h2>
+    <p>
+        Lorem ipsum dolor sit amet.
+    </p>
+
+    <!-- Semua tag p yang memiliki id main -->
+    <p id="main">
+        Lorem, ipsum dolor.
+    </p>
+
+    <!-- Semua tag p yang memiliki class main -->
+    <p class="main">
+        Lorem, ipsum dolor.
+    </p>
+
+    <!-- Semua tag 'p' yang ada di dalam tag 'div' -->
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <p>Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <!-- Semua tag 'i yg ada di dalam tag 'p', dimana 'p' ada didalam 'div' -->
+    <div>
+        <p>
+            Lorem ipsum <i>dolor</i> sit amet.
+        </p>
+    </div>
+
+    <!-- Tidak termasuk -->
+    <p>
+        Lorem ipsum <i>dolor</i> sit amet.
+    </p>
+
+    <p>
+        <p class="hello">
+
+        </p>
+
+        <div class="hello">
+
+        </div>
+
+        <img src="" alt="" class="hello">
+    </p>
+
+    <div>
+        <p id="something">
+
+        </p>
+    </div>
+
+    <div>
+        <p>
+            <img src="" alt="" id="something">
+        </p>
+    </div>
+
+    <div style="text-align: center;">
+        CLICK TO ZOOM OUT!!!! <br>
+        <input type="button" value="Button" id="hello">
+    </div>
+</body>
+</html>
