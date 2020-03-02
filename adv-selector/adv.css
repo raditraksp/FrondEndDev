@@ -59,25 +59,85 @@ main h1, footer h1, h1#footerFamily{
     /* Kharis */
 }
 
-input#hello {
-    width: 180px;
-    height: 60px;
-    color: white;
-    background-color:rgb(14, 100, 74);
-    font-size: 4px;
-    font-weight: bold;
-}
+/* ############### */
+/* CHILD SELECTOR */
+/* ############### */
 
-input#hello:hover {
-    color: rgb(14, 100, 74);
-    background-color:white;
+/* Semua tag image yang merupakan child dari div */
+div > img {
     border: 1px solid black;
-    transition: 0.5s;
 }
 
-input#hello:active {
-    color: rgb(219, 206, 206);
-    background-color:rgb(64, 9, 71);
-    font-size: 30px;
+/* 
+    Tag image yang merupakan child dari paragraph
+    dimana paragraph merukapan child dari div
+*/
+div > p > img {
+
+}
+
+
+input#hello {
+    width: 140px;
+    height: 40px;
+    color: white;
+    background-color: rgb(56, 134, 165);
+    font-size: 20px;
     font-weight: bold;
+}
+
+/* Jika mouse diarahkan ke tag input dengan id hello */
+input#hello:hover{
+    color: rgb(56, 134, 165);
+    background-color: white;
+    border: 1px solid black;
+}
+
+/* Jika tag input dengan id hello di klik */
+input#hello:active{
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: rgb(131, 12, 211);
+    font-size: 15px;
+    font-weight: normal;
+}
+
+/* MEDIA QUERY */
+div.media{
+    width: 90%;
+    height: 500px;
+    line-height: 500px;
+    background-color: violet;
+    margin: 100px auto;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid brown;
+}
+
+@media(min-width: 700px){
+    div.media{
+        background-color: red;
+        border : 3px solid black;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media(min-width: 800px){
+    div.media{
+        background-color: rgb(45, 167, 15);
+        border : 3px solid rgb(34, 136, 161);
+        font-size: 20px;
+        color: white;
+    }
+}
+
+@media(max-width: 540px){
+    /* handphone */
+    div.media{
+        background-color: black;
+        color: black;
+    }
 }

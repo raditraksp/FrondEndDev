@@ -70,9 +70,32 @@
         </p>
     </div>
 
-    <div style="text-align: center;">
-        CLICK TO ZOOM OUT!!!! <br>
-        <input type="button" value="Button" id="hello">
+    <!-- Semua tag image yang merupakan child dari div -->
+    <div>
+        <img id='child-of-div' >
+        <p>
+            <img id='grand-child-of-div' >
+        </p>
     </div>
+
+    <!--
+        Tag image yang merupakan child dari paragraph
+        dimana paragraph merukapan child dari div
+    -->
+    <div>
+        <p>
+            <img id='child-of-paragraph' >
+        </p>
+    </div>
+
+    <input type="button" value="Button" id="hello">
+
+    <!-- Media Query : Menentukan style berdasarkan lebar -->
+    <div class="media">
+        MEDIA QUERY
+    </div>
+
+    <div style="margin-top: 500px;"></div>
+
 </body>
 </html>

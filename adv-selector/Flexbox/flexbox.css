@@ -1,0 +1,79 @@
+/* FLEX - CONTAINER */
+div.container {
+    display: flex;
+    width: 100%;
+    height: 550px;
+    /* top & bottom : 0 */
+    /* left & right: auto */
+    /* auto : Sisa dari ruang yang ada akan dibagi sama rata untuk kanan dan kiri */
+    background-color: thistle;
+}
+
+/* FLEX - ITEM */
+.container div {
+    margin: 10px 15px;
+    height: 20%;
+    border : 1px solid black;
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    font-size: 16;
+    font-weight: bold;
+}
+
+/* FLEX CONTAINER PROPERTY */
+
+/* flex-direction | flex-wrap | flex-flow */
+.container {
+    /* flex-direction: row (default) | row-reverse | column | column-revserse; */
+    /* flex-direction: row; */
+
+    /* flex-wrap : nowrap (default) | wrap | wrap-reverse */
+    /* wrap : flex-item akan pindah ke baris baru ketika lebar container tidak mencukupi */
+    /* flex-wrap: wrap; */
+
+    /* flex-flow (shorthand) */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+/* justify-content | align-content */
+.container {
+    /* 
+        ROW :
+        - Horizontal : justify-content
+        - Vertical : align-contet
+        COLUMN :
+        - Horizontal : align-contet
+        - Vertical : justify-content
+    
+    */
+
+    /* justify-content : flex-start (default) | flex-end | center | space-around | space-between | space-evenly */
+    /* space-around : margin antar flex-item akan lebih lebar dibanding margin antara flex-item dengan border content */
+    /* space-between : margin hanya ada di antara flex-item */
+    /* space-evenly : margin antar flex-item dan margin flex-item dg border content sama lebar */
+    /* justify-content: space-evenly ; */
+
+    /* align-content : flex-start (default) | flex-end | center | space-around | space-between | space-evenly */
+    /* align-content: center; */
+}
+
+/* FLEX ITEM PROPERTY */
+
+/* ORDER : Urutan */
+/* FLEX : Lebar */
+
+#item-1 {
+    order: 3;
+    flex: 2
+}
+#item-2 {
+    order: 1;
+    flex: 2
+}
+#item-3 {
+    order: 2;
+    flex: 2
+}
