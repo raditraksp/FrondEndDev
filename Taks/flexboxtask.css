@@ -1,0 +1,87 @@
+
+/* Exercise */
+
+body {
+    background-color: #86867e;
+}
+
+/* 
+    box-sizing : content-box
+    'width' = lebar konten + lebar padding
+    width: 300px
+    padding : 10px
+    lebar konten : 300px
+    lebar padding : 20px
+    result : 320px
+    box-sizing : border-box
+    'width' = lebar konten sudah termasuk lebar padding juga
+    width: 300px
+    padding : 10px
+    lebar konten : 280px
+    lebar padding : 20px
+    result = 300px
+*/
+* {
+    box-sizing: border-box;
+}
+
+/* FIRST CONTAINER */
+.first-container {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.first-container div{
+    padding: 7px;
+}
+
+.main {
+    flex: 2;
+    order : 2;
+}
+
+.side-one {
+    flex:1;
+    order:1
+}
+
+.side-two {
+    flex:1;
+    order:3
+}
+
+/* SECOND CONTAINER */
+.second-container {
+    width: 90%;
+    margin: 20px auto;
+}
+
+.feature {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.feature:nth-child(1){
+    background-color: cornsilk;
+}
+
+.feature:nth-child(2){
+    background-color: crimson;
+}
+
+.feature:nth-child(3){
+    background-color: darkcyan;
+}
+
+@media(min-width: 900px){
+    .second-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .feature{
+        width: 30%
+    }
+} 
